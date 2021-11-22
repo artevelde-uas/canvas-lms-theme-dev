@@ -19,8 +19,7 @@
   },
   "files": [
     "src/",
-    "config/",
-    "docs/"
+    "config/"
   ],
   "dependencies": {
     "@babel/core": "^7.15.5",
