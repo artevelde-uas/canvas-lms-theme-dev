@@ -83,7 +83,8 @@ module.exports = {
                     output: {
                         comments: false
                     }
-                }
+                },
+                extractComments: false
             }),
             new CssMinimizerPlugin()
         ]
