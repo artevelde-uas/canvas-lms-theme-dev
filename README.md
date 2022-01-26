@@ -7,7 +7,10 @@
 
 ## Development tool for building custom JS & CSS for Canvas LMS theme customizations
 
-This package provides base Webpack configuration files that work out of the box (or can be extended).
+This package provides the following functionality to make it easier to rapidly develop plug-ins:
+
+* **Webpack config:** Base Webpack configuration files that work out of the box (or can be extended).
+* **Server:** A server that can serve your code from your localhost so you don't have to re-upload it to Canvas every time it changes.
 
 ## Installation
 
@@ -20,6 +23,8 @@ Using Yarn:
     yarn add @artevelde-uas/canvas-lms-theme-dev
 
 ## Usage
+
+### Webpack configuration
 
 The Canvas LMS Theme tool provides default Webpack config files for *development* and *production*. You can import and override them like so:
 
@@ -48,6 +53,33 @@ You can then add these scripts to your `package.json` file:
 ```
 
 **NOTE:** Instructure UI (which is included) requires Webpack v4 (!) to work properly.
+
+### Server configuration
+
+The Canvas LMS Theme provides a server script that serves your code from localhost on port 5000. You can change the default settings like this:
+
+```json
+{
+    // ...
+    "config": {
+        "server": {
+            "port": 5001,
+            "file": "desktop.dev.js"
+        }
+    }
+}
+```
+
+You can then use the script like this:
+
+```json
+{
+    // ...
+    "scripts": {
+        "start": "canvas-server-start"
+    }
+}
+```
 
 ## Adding plug-ins to your project
 
