@@ -10,7 +10,6 @@
   "repository": "https://github.com/artevelde-uas/canvas-lms-theme-dev",
   "module": "src/index.js",
   "exports": {
-    ".": "./src",
     "./webpack/development-config": "./config/webpack.dev.js",
     "./webpack/production-config": "./config/webpack.prod.js"
   },
