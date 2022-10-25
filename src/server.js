@@ -17,8 +17,8 @@ log('\n');
 // Create 'dist' folder if it doesn't exist
 if (!fs.existsSync(distFolder)) {
     log(chalk`
-        {cyan INFO: Folder '${distFolder}' does not exist.}
-         -> Creating '${distFolder}' ...
+        {yellow WARN: Folder '${distFolder}' does not exist.}
+        {cyan INFO: Creating '${distFolder}' ...}
     `, '\n');
 
     fs.mkdirSync(distFolder);
@@ -45,8 +45,8 @@ themeWarnings: {
 
     if (!fs.existsSync(hideWarningsStylesPath)) {
         log(chalk`
-            {cyan INFO: File '${hideWarningsStylesPath}' does not exist.}
-             -> Creating '${hideWarningsStylesPath}' ...
+            {yellow WARN: File '${hideWarningsStylesPath}' does not exist.}
+            {cyan INFO: Creating '${hideWarningsStylesPath}' ...}
              -> Please upload this CSS file to your Canvas theme.
         `, '\n');
     } else {
@@ -71,12 +71,12 @@ serveLocal: {
     const serveLocalScriptDistFile = path.join(__dirname, '/serve-local.js.dist');
 
     const serveLocalScriptDist = fs.readFileSync(serveLocalScriptDistFile, 'utf8');
-    const serveLocalScript = serveLocalScriptDist.replace(/{{URL}}/, `http://127.0.0.1:${port}`)
+    const serveLocalScript = serveLocalScriptDist.replace(/{{URL}}/, `http://127.0.0.1:${port}`);
 
     if (!fs.existsSync(serveLocalScriptFile)) {
         log(chalk`
-            {cyan INFO: File '${serveLocalScriptFile}' does not exist.}
-             -> Creating '${serveLocalScriptFile}' ...
+            {yellow WARN: File '${serveLocalScriptFile}' does not exist.}
+            {cyan INFO: Creating '${serveLocalScriptFile}' ...}
              -> Please upload this JavaScript file to your Canvas theme.
         `, '\n');
     } else {
