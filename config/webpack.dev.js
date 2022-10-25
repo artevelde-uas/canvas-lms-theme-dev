@@ -13,7 +13,7 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.js?$/,
+            test: /\.js$/,
             use: [{
                 loader: 'babel-loader',
                 options: {
@@ -23,7 +23,7 @@ module.exports = {
                         }]
                     ],
                     plugins: [
-                        "@babel/plugin-proposal-optional-chaining",
+                        '@babel/plugin-proposal-optional-chaining',
                         '@babel/plugin-proposal-nullish-coalescing-operator'
                     ]
                 }
@@ -40,7 +40,7 @@ module.exports = {
                         '@babel/preset-react'
                     ],
                     plugins: [
-                        "@babel/plugin-proposal-optional-chaining",
+                        '@babel/plugin-proposal-optional-chaining',
                         '@babel/plugin-proposal-nullish-coalescing-operator'
                     ]
                 }
