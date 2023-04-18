@@ -44,7 +44,6 @@ You can then add these scripts to your `package.json` file:
 
 ```json
 {
-    // ...
     "scripts": {
         "build": "webpack --config=./config/webpack.prod.js",
         "build:dev": "webpack --config=./config/webpack.dev.js"
@@ -60,7 +59,6 @@ The Canvas LMS Theme provides a server script that serves your code from localho
 
 ```json
 {
-    // ...
     "config": {
         "server": {
             "port": 5001,
@@ -74,7 +72,6 @@ You can then use the script like this:
 
 ```json
 {
-    // ...
     "scripts": {
         "start": "canvas-server-start"
     }
