@@ -1,6 +1,6 @@
 {
   "name": "@artevelde-uas/canvas-lms-theme-dev",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Development tool for building custom JS & CSS for Canvas LMS theme customizations",
   "keywords": [
     "Canvas LMS"
