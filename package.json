@@ -14,7 +14,8 @@
     "./webpack/production-config": "./config/webpack.prod.js"
   },
   "bin": {
-    "canvas-server-start": "./src/server.js"
+    "canvas-server-start": "./src/server.js",
+    "webpack": "./src/webpack.js"
   },
   "files": [
     "src/",
