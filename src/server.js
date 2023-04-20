@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const chalk = require('chalk');
 const boxen = require('boxen');
-const { log } = require("./util");
+const { log } = require('./util');
 
 const appRoot = process.cwd();
 const distFolder = path.join(appRoot, '/dist');
