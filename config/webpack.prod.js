@@ -37,7 +37,7 @@ module.exports = {
                 options: {
                     modules: {
                         auto: true,
-                        localIdentName: '[hash:base52:5]',
+                        localIdentName: 'css-[hash:base52:6]-[local]',
                         exportLocalsConvention: 'camelCaseOnly'
                     }
                 }

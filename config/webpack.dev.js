@@ -46,7 +46,7 @@ module.exports = {
                 options: {
                     modules: {
                         auto: true,
-                        localIdentName: '[hash:base52:5]__[local]',
+                        localIdentName: 'plugin__[hash:base52:6]__[local]',
                         exportLocalsConvention: 'camelCaseOnly'
                     }
                 }
