@@ -2,6 +2,7 @@
     const script = document.createElement('script');
 
     script.setAttribute('src', '{{URL}}');
-    script.setAttribute('defer', 'defer');
+    script.toggleAttribute('defer', true);
+    
     document.head.appendChild(script);
 }

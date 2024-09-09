@@ -18,11 +18,11 @@ This package provides the following functionality to make it easier to rapidly d
 
 Using NPM:
 
-    npm install @artevelde-uas/canvas-lms-theme-dev
+    npm install --save-dev @artevelde-uas/canvas-lms-theme-dev
 
 Using Yarn:
 
-    yarn add @artevelde-uas/canvas-lms-theme-dev
+    yarn add -D @artevelde-uas/canvas-lms-theme-dev
 
 ## Usage
 

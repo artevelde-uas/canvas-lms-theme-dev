@@ -21,10 +21,6 @@ module.exports = {
                         ['@babel/preset-env', {
                             targets: browserslist
                         }]
-                    ],
-                    plugins: [
-                        '@babel/plugin-proposal-optional-chaining',
-                        '@babel/plugin-proposal-nullish-coalescing-operator'
                     ]
                 }
             }]
@@ -38,10 +34,6 @@ module.exports = {
                             targets: browserslist
                         }],
                         '@babel/preset-react'
-                    ],
-                    plugins: [
-                        '@babel/plugin-proposal-optional-chaining',
-                        '@babel/plugin-proposal-nullish-coalescing-operator'
                     ]
                 }
             }]
@@ -54,7 +46,7 @@ module.exports = {
                 options: {
                     modules: {
                         auto: true,
-                        localIdentName: '[hash:base52:5]__[local]',
+                        localIdentName: 'plugin__[hash:base52:6]__[local]',
                         exportLocalsConvention: 'camelCaseOnly'
                     }
                 }
@@ -75,9 +67,9 @@ module.exports = {
                 }
             }]
         }, {
-            test: /\.(gif|png|jpe?g|svg)$/i,
+            test: /\.(webp|gif|png|jpe?g|svg)$/i,
             use: [{
-                loader: 'raw-loader'
+                loader: 'url-loader'
             }, {
                 loader: 'image-webpack-loader'
             }]
