@@ -64,7 +64,7 @@ module.exports = {
                 }
             }]
         }, {
-            test: /\.(gif|png|jpe?g|svg)$/i,
+            test: /\.(webp|gif|png|jpe?g|svg)$/i,
             use: [{
                 loader: 'raw-loader'
             }, {
