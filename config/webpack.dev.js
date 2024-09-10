@@ -21,6 +21,10 @@ module.exports = {
                         ['@babel/preset-env', {
                             targets: browserslist
                         }]
+                    ],
+                    plugins: [
+                        '@babel/plugin-proposal-optional-chaining',
+                        '@babel/plugin-proposal-nullish-coalescing-operator'
                     ]
                 }
             }]
@@ -34,6 +38,10 @@ module.exports = {
                             targets: browserslist
                         }],
                         '@babel/preset-react'
+                    ],
+                    plugins: [
+                        '@babel/plugin-proposal-optional-chaining',
+                        '@babel/plugin-proposal-nullish-coalescing-operator'
                     ]
                 }
             }]
