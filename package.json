@@ -1,6 +1,6 @@
 {
   "name": "@artevelde-uas/canvas-lms-theme-dev",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Development tool for building custom JS & CSS for Canvas LMS theme customizations",
   "keywords": [
     "Canvas LMS"
@@ -24,6 +24,8 @@
   ],
   "dependencies": {
     "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
     "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.14.5",
     "@instructure/browserslist-config-canvas-lms": "^2.0.0",
